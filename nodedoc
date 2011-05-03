@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export NODE_DOC_DIR=/Users/matt/Perl/node/doc/api
+export NODEDOC_JS="$0/../nodedoc.js"
+export LESSCHARSET=iso8859
+
+node $NODEDOC_JS $1 | pod2man --section 1 --name $1 -c "Node Reference" -d node.js -r `node -v` | nroff -C -Tlatin1 -mandoc - | less
