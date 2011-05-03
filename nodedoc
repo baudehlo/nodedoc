@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export NODE_DOC_DIR=/Users/matt/Perl/node/doc/api
+export NODE_DOC_DIR=/usr/local/share/node/doc
 export NODEDOC_JS="$0/../nodedoc.js"
 export LESSCHARSET=iso8859
 
